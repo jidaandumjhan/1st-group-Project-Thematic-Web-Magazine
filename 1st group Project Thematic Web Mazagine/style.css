@@ -1,0 +1,207 @@
+/* Basic Resets and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background-color: #2E8B57;  /* A lush green color */
+    padding: 10px 0;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+nav a:hover {
+   /* Hover Effects */
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    border-bottom: 2px solid white;
+}
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro img {  /* For the plantation image */
+    width: 100%;
+    max-height: 600px;
+    display: block;
+    margin: 20px auto;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.features ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features li {
+    flex-basis: 23%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.features li:hover {
+    transform: scale(1.05); /* Slightly enlarge the item */
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2); /* Increase the shadow for a lifted effect */
+}
+
+.features img {
+    width: 100%;
+    max-height: 150px;
+    display: block; /* Ensures no white space below the image */
+    margin-bottom: 10px;
+}
+
+.features p { /* Added for a little spacing below each image's description */
+    margin-top: 10px;
+}
+
+.value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.value video {  /* For the video describing your vision */
+    flex-basis: 48%; /* Gives it almost half the space */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);   
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.value video {
+    animation: fadeIn 1.5s forwards;
+}
+
+.value p {
+    flex-basis: 48%; /* Gives it almost half the space */
+}
+
+.future h2 {
+    animation: fadeIn 2s ease-in forwards;  /* Animation for the heading */
+}
+
+/* Poll Styles */
+.poll {
+    background-color: #f7f7f7; /* Light grey background for the poll area for distinction */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around the poll content */
+    margin-top: 20px; /* Margin at the top to separate from previous content */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Box shadow for depth */
+}
+
+.poll h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.poll p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.poll label {
+    display: block; /* Making labels block to take full width */
+    margin-bottom: 10px; /* Spacing between options */
+    font-size: 1em;
+    color: #444;
+}
+
+.poll input[type="radio"] {
+    margin-right: 10px; /* Spacing between radio button and its label */
+}
+
+.poll textarea {
+    width: 100%; /* Make textarea take full width of its container */
+    padding: 10px; /* Padding inside textarea */
+    border: 1px solid #ccc; /* Border around textarea */
+    border-radius: 5px; /* Slightly rounded corners for textarea */
+    margin-bottom: 20px; /* Spacing below textarea */
+    font-size: 1em;
+}
+
+.poll input[type="submit"] {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Hand cursor on hover */
+    font-size: 1em;
+}
+
+.poll input[type="submit"]:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2E8B57;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
